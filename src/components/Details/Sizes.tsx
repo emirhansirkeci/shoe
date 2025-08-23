@@ -13,7 +13,7 @@ export default function Sizes({ sizes }: SizesProps) {
           <button
             key={i}
             className={cn(
-              'flex h-12 w-[calc(25%-0.75rem)] items-center justify-center rounded-xl border border-gray-200 bg-white',
+              'flex h-12 w-[calc(25%-16px)] items-center justify-center rounded-xl border border-gray-200 bg-white sm:w-[calc(20%-16px)]',
               { 'cursor-not-allowed opacity-50': !size.stock },
             )}
           >

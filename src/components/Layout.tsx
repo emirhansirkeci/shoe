@@ -7,8 +7,8 @@ type LayoutProps = {
 
 export default function Layout({ children }: LayoutProps) {
   return (
-    <div className="flex w-full justify-center overflow-hidden">
-      <div className="w-full max-w-[835px] overflow-hidden bg-gray-50 p-4">
+    <div className="flex min-h-[100vh] w-full justify-center overflow-hidden">
+      <div className="min-h-full w-full max-w-[1024px] overflow-hidden bg-gray-50 p-4">
         <Header />
         {children}
       </div>
