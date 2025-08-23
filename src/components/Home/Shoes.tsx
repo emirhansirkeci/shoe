@@ -43,9 +43,9 @@ function Shoe({ name, slug, price, img, bgColor, theme = 'light' }: ShoeProps) {
         <p className="font-light tracking-widest">{price}</p>
       </div>
       <div
-        className={cn('h-[70%] w-[1px] border opacity-10', {
+        className={cn('h-[70%] w-0 border-r opacity-20', {
           'border-white': theme === 'dark',
-          'border-gray-500': theme === 'light',
+          'border-gray-600': theme === 'light',
         })}
       />
 
