@@ -20,7 +20,7 @@ export default function Detail() {
       />
 
       <div className="z-50 flex h-64 items-end justify-center">
-        <img src={shoe.img} className="mb-8 w-80" />
+        <img src={shoe.img} className="mb-8 w-80 md:w-96" />
       </div>
 
       <Info description={shoe.description} name={shoe.name} price={shoe.price} />

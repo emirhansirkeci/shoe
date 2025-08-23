@@ -34,7 +34,7 @@ function Shoe({ name, slug, price, img, bgColor, theme = 'light' }: ShoeProps) {
     <Link
       to={`/details/${slug}`}
       className={cn(
-        'relative flex h-92 w-[75%] shrink-0 snap-start flex-col gap-4 rounded-2xl px-8 py-6',
+        'relative flex h-92 w-[75%] shrink-0 snap-start flex-col gap-4 rounded-2xl px-8 py-6 sm:w-[60%]',
       )}
       style={{ backgroundColor: bgColor }}
     >
