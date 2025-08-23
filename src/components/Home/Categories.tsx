@@ -8,7 +8,7 @@ export default function Categories() {
       <div className="no-scrollbar flex flex-shrink-0 gap-2 overflow-x-auto scroll-smooth whitespace-nowrap">
         <div className="rounded-full bg-gray-900 px-6 py-2 text-xs text-gray-100">All</div>
         {categories.map((category, index) => (
-          <div
+          <button
             key={index}
             className={cn(
               'rounded-full border border-gray-300 bg-gray-50 px-6 py-2 text-xs text-gray-700',
@@ -16,7 +16,7 @@ export default function Categories() {
             )}
           >
             {category}
-          </div>
+          </button>
         ))}
       </div>
     </div>

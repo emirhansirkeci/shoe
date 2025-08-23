@@ -10,17 +10,21 @@ export default function Header() {
     <div className="relative z-50 flex h-12 w-full justify-between">
       {isHome ? (
         <>
-          <Link to="/" className="touch-hitbox">
+          <Link to="/" className="touch-hitbox flex">
             <Hexagon />
           </Link>
-          <Search className="touch-hitbox" />
+          <button className="touch-hitbox flex">
+            <Search />
+          </button>
         </>
       ) : (
         <>
-          <Link to="/" className="touch-hitbox">
+          <Link to="/" className="touch-hitbox flex">
             <ArrowLeft color="white" />
           </Link>
-          <Heart color="white" className="touch-hitbox" />
+          <button className="touch-hitbox flex">
+            <Heart color="white" />
+          </button>
         </>
       )}
     </div>

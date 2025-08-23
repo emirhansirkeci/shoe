@@ -10,7 +10,7 @@ export default function Sizes({ sizes }: SizesProps) {
       <h3 className="text-xl font-bold">Select Size</h3>
       <div className="flex flex-wrap gap-4">
         {sizes.map((size, i) => (
-          <div
+          <button
             key={i}
             className={cn(
               'flex h-12 w-[calc(25%-0.75rem)] items-center justify-center rounded-xl border border-gray-200 bg-white',
@@ -18,7 +18,7 @@ export default function Sizes({ sizes }: SizesProps) {
             )}
           >
             {size.label}
-          </div>
+          </button>
         ))}
       </div>
     </div>

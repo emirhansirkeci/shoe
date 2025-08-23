@@ -3,3 +3,14 @@
 body {
   font-family: 'Inter', sans-serif;
 }
+
+button,
+a {
+  transition: transform 150ms;
+  cursor: pointer;
+}
+
+button:active,
+a:active {
+  transform: scale(0.97);
+}
