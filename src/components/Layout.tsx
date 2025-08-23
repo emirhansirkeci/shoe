@@ -1,5 +1,5 @@
 import React from 'react';
-import Header from './Home/Header';
+import Header from './Header';
 
 type LayoutProps = {
   children: React.ReactNode;
@@ -7,8 +7,8 @@ type LayoutProps = {
 
 export default function Layout({ children }: LayoutProps) {
   return (
-    <div className="flex w-full justify-center overflow-hidden sm:mt-3">
-      <div className="w-full max-w-[435px] overflow-hidden bg-gray-50 p-4 sm:rounded-2xl sm:border sm:border-gray-200">
+    <div className="flex w-full justify-center overflow-hidden">
+      <div className="w-full max-w-[835px] overflow-hidden bg-gray-50 p-4">
         <Header />
         {children}
       </div>

@@ -15,11 +15,13 @@ export default function Detail() {
   return (
     <div className="relative flex flex-col gap-6">
       <div
-        className="absolute -top-64 -right-20 h-128 w-128 rounded-full"
+        className="absolute -top-86 -right-48 h-148 w-148 rounded-full"
         style={{ backgroundColor: shoe.bgColor }}
       />
 
-      <img src={shoe.img} className="z-50 w-92" />
+      <div className="z-50 flex h-64 items-end justify-center">
+        <img src={shoe.img} className="mb-8 w-80" />
+      </div>
 
       <Info description={shoe.description} name={shoe.name} price={shoe.price} />
       <Types types={shoe.types} />

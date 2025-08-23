@@ -1,54 +1,10 @@
 [
   {
-    "name": "Air Max 97",
-    "slug": "air-max-97",
-    "price": "₺11,899",
-    "img": "/yellow-shoe.png",
-    "bgColor": "#FFA500",
-    "theme": "light",
-    "description": "In the game's crucial moments, Air Max 97 delivers comfort and speed. Its fluid design makes every step feel unstoppable.",
-    "sizes": [
-      { "label": "UK 6", "stock": true },
-      { "label": "UK 7", "stock": false },
-      { "label": "UK 8", "stock": true },
-      { "label": "UK 9", "stock": true },
-      { "label": "UK 10", "stock": false },
-      { "label": "UK 11", "stock": true }
-    ],
-    "types": [
-      { "img": "/jordan-tatum.png" },
-      { "img": "/nike-air-max-plus.png" },
-      { "img": "/air-foamposite-one.png" }
-    ]
-  },
-  {
-    "name": "Air Jordan 1",
-    "slug": "air-jordan-1",
-    "price": "₺9,499",
-    "img": "/yellow-shoe.png",
-    "bgColor": "#FFD700",
-    "theme": "light",
-    "description": "Classic heritage meets modern game. Air Jordan 1 dominates the court and the streets with fearless energy.",
-    "sizes": [
-      { "label": "UK 6", "stock": true },
-      { "label": "UK 7", "stock": true },
-      { "label": "UK 8", "stock": false },
-      { "label": "UK 9", "stock": true },
-      { "label": "UK 10", "stock": true },
-      { "label": "UK 11", "stock": false }
-    ],
-    "types": [
-      { "img": "/jordan-tatum.png" },
-      { "img": "/nike-air-max-plus.png" },
-      { "img": "/air-foamposite-one.png" }
-    ]
-  },
-  {
-    "name": "Blazer Mid",
-    "slug": "blazer-mid-1",
-    "price": "₺7,299",
-    "img": "/yellow-shoe.png",
-    "bgColor": "#FFB347",
+    "name": "Alpha Savage",
+    "slug": "alpha-savage",
+    "price": "₺8.895",
+    "img": "/alpha-savage.png",
+    "bgColor": "#e34c4d",
     "theme": "dark",
     "description": "Blazer Mid keeps it sharp and stylish. A timeless design built to turn heads on and off the court.",
     "sizes": [
@@ -60,7 +16,51 @@
       { "label": "UK 11", "stock": true }
     ],
     "types": [
-      { "img": "/jordan-tatum.png" },
+      { "img": "/alpha-savage.png" },
+      { "img": "/nike-cygnal.png" },
+      { "img": "/air-foamposite-one.png" }
+    ]
+  },
+  {
+    "name": "Jordan Spizike Low",
+    "slug": "jordan-spizike-low",
+    "price": "₺11.897",
+    "img": "/jordan-spizike-low.png",
+    "bgColor": "#0284c7",
+    "theme": "dark",
+    "description": "In the game's crucial moments, Air Max 97 delivers comfort and speed. Its fluid design makes every step feel unstoppable.",
+    "sizes": [
+      { "label": "UK 6", "stock": true },
+      { "label": "UK 7", "stock": false },
+      { "label": "UK 8", "stock": true },
+      { "label": "UK 9", "stock": true },
+      { "label": "UK 10", "stock": false },
+      { "label": "UK 11", "stock": true }
+    ],
+    "types": [
+      { "img": "/jordan-spizike-low.png" },
+      { "img": "/nike-air-max-plus.png" },
+      { "img": "/nike-cygnal.png" }
+    ]
+  },
+  {
+    "name": "Nike Cygnal",
+    "slug": "nike-cygnal",
+    "price": "₺12.995",
+    "img": "/nike-cygnal.png",
+    "bgColor": "#fbba60",
+    "theme": "light",
+    "description": "Classic heritage meets modern game. Air Jordan 1 dominates the court and the streets with fearless energy.",
+    "sizes": [
+      { "label": "UK 6", "stock": true },
+      { "label": "UK 7", "stock": true },
+      { "label": "UK 8", "stock": false },
+      { "label": "UK 9", "stock": true },
+      { "label": "UK 10", "stock": true },
+      { "label": "UK 11", "stock": false }
+    ],
+    "types": [
+      { "img": "/nike-cygnal.png" },
       { "img": "/nike-air-max-plus.png" },
       { "img": "/air-foamposite-one.png" }
     ]

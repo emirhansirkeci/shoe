@@ -1,3 +1,5 @@
+import { cn } from '../../utils';
+
 interface TypesProps {
   types: { img: string }[];
 }
@@ -8,7 +10,9 @@ export default function Types({ types }: TypesProps) {
       {types.map((type, index) => (
         <div
           key={index}
-          className="flex h-24 w-24 items-center justify-center rounded-3xl border-2"
+          className={cn('flex h-24 w-24 items-center justify-center rounded-3xl', {
+            'border-2': index === 0,
+          })}
         >
           <img src={type.img} className="w-20" />
         </div>
