@@ -15,7 +15,7 @@ export default function Detail() {
   return (
     <div className="relative flex flex-col gap-6">
       <div
-        className="absolute -top-86 -right-48 h-148 w-148 rounded-full"
+        className="absolute -top-105 -right-40 h-[640px] w-[140vw] min-w-[640px] rounded-full sm:-top-115 sm:w-[140vw] md:w-[1200px]"
         style={{ backgroundColor: shoe.bgColor }}
       />
 
