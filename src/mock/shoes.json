@@ -84,13 +84,13 @@
     "types": [{ "img": "/nike-air-max-plus.png" }, { "img": "/air-foamposite-one.png" }]
   },
   {
-    "name": "Puma RS-X",
-    "slug": "puma-rs-x",
-    "price": "₺11.250",
+    "name": "Jordan Tatum",
+    "slug": "jordan-tatum",
+    "price": "₺11.299",
     "img": "/jordan-tatum.png",
     "bgColor": "#cbd5e1",
     "theme": "light",
-    "description": "Bold style and superior cushioning. Puma RS-X stands out on every street and track.",
+    "description": "Bold style and superior cushioning. Jordan Tatum stands out on every street and track.",
     "sizes": [
       { "label": "UK 6", "stock": true },
       { "label": "UK 7", "stock": true },

@@ -5,9 +5,11 @@ export default function Options() {
     <div className="mt-6 flex flex-col gap-6">
       <h2 className="text-xs font-semibold tracking-wider text-gray-400 uppercase">243 Options</h2>
 
-      {data.map((shoe, index) => (
-        <ShoeCard key={index} name={shoe.name} price={shoe.price} img={shoe.img} />
-      ))}
+      <div className="no-scrollbar flex max-h-60 flex-col gap-6 overflow-y-auto">
+        {data.map((shoe, index) => (
+          <ShoeCard key={index} name={shoe.name} price={shoe.price} img={shoe.img} />
+        ))}
+      </div>
     </div>
   );
 }
