@@ -1,6 +1,7 @@
 import data from '../../mock/shoes.json';
 import { cn } from '../../utils';
 import { Link } from 'react-router';
+import { motion, type Variants } from 'framer-motion';
 
 export default function Shoes() {
   return (
@@ -30,6 +31,21 @@ type ShoeProps = {
 };
 
 function Shoe({ name, slug, price, img, bgColor, theme = 'light' }: ShoeProps) {
+  const shoeVariants: Variants = {
+    offscreen: {
+      rotate: 360,
+    },
+    onscreen: {
+      rotate: 320,
+      transition: {
+        type: 'spring',
+        stiffness: 180,
+        damping: 22,
+        mass: 0.8,
+      },
+    },
+  };
+
   return (
     <Link
       to={`/details/${slug}`}
@@ -49,7 +65,15 @@ function Shoe({ name, slug, price, img, bgColor, theme = 'light' }: ShoeProps) {
         })}
       />
 
-      <img className="absolute -right-16 bottom-16 w-92 rotate-320" src={img} alt={name} />
+      <motion.img
+        initial="offscreen"
+        whileInView="onscreen"
+        viewport={{ amount: 0.5 }}
+        variants={shoeVariants}
+        className="absolute -right-16 bottom-16 w-92"
+        src={img}
+        alt={name}
+      />
     </Link>
   );
 }
