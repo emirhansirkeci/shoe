@@ -64,5 +64,41 @@
       { "img": "/nike-air-max-plus.png" },
       { "img": "/air-foamposite-one.png" }
     ]
+  },
+  {
+    "name": "Nike Air Max Plus",
+    "slug": "nike-air-max-plus",
+    "price": "₺9.499",
+    "img": "/nike-air-max-plus.png",
+    "bgColor": "#4fa3f7",
+    "theme": "dark",
+    "description": "Sleek design meets everyday comfort. Nike Air Max Plus keeps you moving in style.",
+    "sizes": [
+      { "label": "UK 6", "stock": true },
+      { "label": "UK 7", "stock": false },
+      { "label": "UK 8", "stock": true },
+      { "label": "UK 9", "stock": true },
+      { "label": "UK 10", "stock": false },
+      { "label": "UK 11", "stock": true }
+    ],
+    "types": [{ "img": "/nike-air-max-plus.png" }, { "img": "/air-foamposite-one.png" }]
+  },
+  {
+    "name": "Puma RS-X",
+    "slug": "puma-rs-x",
+    "price": "₺11.250",
+    "img": "/jordan-tatum.png",
+    "bgColor": "#cbd5e1",
+    "theme": "light",
+    "description": "Bold style and superior cushioning. Puma RS-X stands out on every street and track.",
+    "sizes": [
+      { "label": "UK 6", "stock": true },
+      { "label": "UK 7", "stock": true },
+      { "label": "UK 8", "stock": true },
+      { "label": "UK 9", "stock": false },
+      { "label": "UK 10", "stock": true },
+      { "label": "UK 11", "stock": true }
+    ],
+    "types": [{ "img": "/jordan-tatum.png" }, { "img": "/nike-air-max-plus.png" }]
   }
 ]
