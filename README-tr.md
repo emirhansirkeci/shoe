@@ -1,6 +1,6 @@
 # Shoes
 
-[![en](https://img.shields.io/badge/lang-tr-red.svg)](https://github.com/emirhansirkeci/shoe/blob/main/README.md)
+[![en](https://img.shields.io/badge/lang-en-red.svg)](https://github.com/emirhansirkeci/shoe/blob/main/README.md)
 
 Sadece pratik yapmak için oluşturulmuş basit bir React uygulaması. Uygulama **yalnızca mobil ve tablet uyumlu** olacak şekilde optimize edilmiştir, çünkü tasarım bu ekran boyutlarını kapsıyor. Sadece yapı ve layout odaklı çalıştığım için etkileşimler basit tutulmuştur.
 
