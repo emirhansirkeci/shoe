@@ -9,6 +9,7 @@ Sadece pratik yapmak için oluşturulmuş basit bir React uygulaması. Uygulama 
 - [Vite](https://vitejs.dev/)
 - [React](https://react.dev/)
 - [TailwindCSS](https://tailwindcss.com/)
+- [React Router](https://reactrouter.com/)
 
 ## Geliştirici Notları
 

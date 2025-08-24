@@ -9,6 +9,7 @@ Just a basic React application built for practice. It is **only optimized for mo
 - [Vite](https://vitejs.dev/)
 - [React](https://react.dev/)
 - [TailwindCSS](https://tailwindcss.com/)
+- [React Router](https://reactrouter.com/)
 
 ## Development Notes
 
