@@ -3,7 +3,13 @@ import data from '../mock/shoes.json';
 import Info from '../components/Details/Info';
 import Types from '../components/Details/Types';
 import Sizes from '../components/Details/Sizes';
-import { motion } from 'framer-motion';
+import { motion, type Variants } from 'framer-motion';
+
+const pageVariants: Variants = {
+  initial: { y: 100 },
+  animate: { y: 0 },
+  exit: { y: -100 },
+};
 
 export default function Detail() {
   const { slug } = useParams();
@@ -14,7 +20,13 @@ export default function Detail() {
   }
 
   return (
-    <div className="relative flex flex-col gap-6">
+    <motion.div
+      variants={pageVariants}
+      initial="initial"
+      animate="animate"
+      exit="exit"
+      className="relative flex flex-col gap-6"
+    >
       <motion.div
         className="absolute -top-105 -right-40 h-[640px] w-[140vw] min-w-[640px] rounded-full sm:-top-115 sm:w-[140vw] md:w-[1200px]"
         style={{ backgroundColor: shoe.bgColor }}
@@ -30,6 +42,6 @@ export default function Detail() {
       <Sizes sizes={shoe.sizes} />
 
       <button className="w-full rounded-xl bg-gray-800 p-4 text-white">Add to Bag</button>
-    </div>
+    </motion.div>
   );
 }
