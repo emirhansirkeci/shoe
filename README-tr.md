@@ -10,6 +10,7 @@ Sadece pratik yapmak için oluşturulmuş basit bir React uygulaması. Uygulama 
 - [React](https://react.dev/)
 - [TailwindCSS](https://tailwindcss.com/)
 - [React Router](https://reactrouter.com/)
+- [Motion](https://motion.dev/)
 
 ## Geliştirici Notları
 

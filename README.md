@@ -10,6 +10,7 @@ Just a basic React application built for practice. It is **only optimized for mo
 - [React](https://react.dev/)
 - [TailwindCSS](https://tailwindcss.com/)
 - [React Router](https://reactrouter.com/)
+- [Motion](https://motion.dev/)
 
 ## Development Notes
 
