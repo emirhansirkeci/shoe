@@ -1,6 +1,6 @@
 import data from '../../mock/shoes.json';
 import { cn } from '../../utils';
-import { Link } from 'react-router';
+import { useNavigate } from 'react-router';
 import { motion, type Variants } from 'framer-motion';
 
 export default function Shoes() {
@@ -31,12 +31,14 @@ type ShoeProps = {
 };
 
 function Shoe({ name, slug, price, img, bgColor, theme = 'light' }: ShoeProps) {
+  const navigate = useNavigate();
+
   const shoeVariants: Variants = {
     offscreen: {
-      rotate: 360,
+      rotate: 0,
     },
     onscreen: {
-      rotate: 320,
+      rotate: -30,
       transition: {
         type: 'spring',
         stiffness: 180,
@@ -47,12 +49,13 @@ function Shoe({ name, slug, price, img, bgColor, theme = 'light' }: ShoeProps) {
   };
 
   return (
-    <Link
-      to={`/details/${slug}`}
+    <motion.div
       className={cn(
         'relative flex h-92 w-[75%] shrink-0 snap-start flex-col gap-4 rounded-2xl px-8 py-6 sm:w-[60%]',
       )}
+      layoutId={`${slug}-bg-color`}
       style={{ backgroundColor: bgColor }}
+      onClick={() => navigate(`details/${slug}`)}
     >
       <div className={cn({ 'text-white': theme === 'dark', 'text-gray-950': theme === 'light' })}>
         <h2 className="text-xl font-bold">{name}</h2>
@@ -66,6 +69,7 @@ function Shoe({ name, slug, price, img, bgColor, theme = 'light' }: ShoeProps) {
       />
 
       <motion.img
+        layoutId={slug}
         initial="offscreen"
         whileInView="onscreen"
         viewport={{ amount: 0.5 }}
@@ -74,6 +78,6 @@ function Shoe({ name, slug, price, img, bgColor, theme = 'light' }: ShoeProps) {
         src={img}
         alt={name}
       />
-    </Link>
+    </motion.div>
   );
 }
